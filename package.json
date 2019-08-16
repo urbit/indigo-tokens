@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@theme-ui/tachyons": "^0.2.29",
+    "tachyons-generator": "^0.23.0"
+  }
 }
