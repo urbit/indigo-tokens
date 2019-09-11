@@ -9,18 +9,26 @@ const theme = {
     yellow: ["#ffefc5", "#ffd972", "#fcc440", "#ee892b"]
   },
   fonts: {
-    sans: '"Inter", Helvetica, Arial, sans-serif',
-    mono: '"Source Code Pro", monospace'
+    sans: `"Inter", "Inter UI", -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Arial, sans-serif`,
+    mono: `"Source Code Pro", "Roboto mono", "Courier New", monospace`
   },
-  space: [0, 4, 8, 12, 16, 20, 24, 32, 48, 64, 96, 160, 288],
   fontSizes: [12, 14, 16, 18, 24, 32, 48, 64, 72],
-  breakpoints: ["550px", "750px", "960px"],
+  fontWeights: {
+    regular: 400,
+    bold: 600
+  },
   lineHeights: {
     short: 1.333333,
     regular: 1.5,
-    tall: 1.666666
+    tall: 1.6
   },
-  sizes: [0, 4, 8, 12, 16, 20, 24, 32, 48, 64, 96, 160, 288]
+  borders: ['none', '1px solid'],
+  space: [0, 4, 8, 12, 16, 20, 24, 32, 48, 64, 96, 160, 288],
+  sizes: [0, 4, 8, 12, 16, 20, 24, 32, 48, 64, 96, 160, 288],
+  radii: [0, 4],
+  zIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  breakpoints: ["768px", "1024px", "1440px"],
+
 };
 
 theme.breakpoints.small = theme.breakpoints[0];
