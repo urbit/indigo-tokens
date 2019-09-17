@@ -6,7 +6,7 @@ Indigo tokens are named style attributes we use to maintain a consistent and sca
 
 **NPM**
 
-The easiest way to use `indigo-tokens` inside your project is to include install via NPM.
+The easiest way to use `indigo-tokens` inside your project is to include as an NPM package.
 
 ```
 npm install indigo-tokens
