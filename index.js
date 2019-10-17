@@ -3,10 +3,10 @@ const theme = {
     black: "#000000",
     white: "#ffffff",
     gray: ["#333333", "#4d4d4d", "#7f7f7f", "#b1b2b3", "#e6e6e6", "#f9f9f9"],
-    blue: ["#ecf6ff", "#b0c7ff", "#4330fc", "#190d7b"],
-    red: ["#f9d6ce", "#ffa073", "#ee5432", "#c10d30"],
-    green: ["#bdebcc", "#2ed196", "#2aa779", "#286e55"],
-    yellow: ["#ffefc5", "#ffd972", "#fcc440", "#ee892b"]
+    blue: ["#ecf6ff", "#4330fc", "#190d7b"],
+    red: ["#f9d6ce", "#ee5432", "#c10d30"],
+    green: ["#bdebcc", "#2aa779", "#286e55"],
+    yellow: ["#ffefc5", "#fcc440", "#ee892b"]
   },
   fonts: {
     sans: `"Inter", "Inter UI", -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Arial, sans-serif`,
