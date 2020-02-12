@@ -3,26 +3,26 @@ import baseStyled, { ThemedStyledInterface } from 'styled-components';
 const theme = {
   // color, background-color, border-color
   colors: {
-    black:        "#000000",
-    grayDarkest:  "#333333",
-    grayDark:     "#4d4d4d",
-    gray:         "#7f7f7f",
-    grayMid:      "#b1b2b3",
-    grayLight:    "#e6e6e6",
-    grayLightest: "#f9f9f9",
-    white:        "#ffffff",
-    blue:         "#4330fc",
-    blueLight:    "#ecf6ff",
-    blueDark:     "#190d7b",
-    redLight:     "#f9d6ce",
-    red:          "#ee5432",
-    redDark:      "#c10d30",
-    greenLight:   "#bdebcc",
-    green:        "#2aa779",
-    greenDark:    "#286e55",
-    yellowLight:  "#ffefc5",
-    yellow:       "#fcc440",
-    yellowDark:   "#ee892b",
+    black: '#000000',
+    grayDarkest: '#333333',
+    grayDark: '#4d4d4d',
+    gray: '#7f7f7f',
+    grayMid: '#b1b2b3',
+    grayLight: '#e6e6e6',
+    grayLightest: '#f9f9f9',
+    white: '#ffffff',
+    blue: '#4330fc',
+    blueLight: '#ecf6ff',
+    blueDark: '#190d7b',
+    redLight: '#f9d6ce',
+    red: '#ee5432',
+    redDark: '#c10d30',
+    greenLight: '#bdebcc',
+    green: '#2aa779',
+    greenDark: '#286e55',
+    yellowLight: '#ffefc5',
+    yellow: '#fcc440',
+    yellowDark: '#ee892b',
   },
   // font-family
   fonts: {
@@ -54,46 +54,46 @@ const theme = {
   borders: ['none', '1px solid'],
   // margin, margin-top, margin-right, margin-bottom, margin-left, padding, padding-top, padding-right, padding-bottom, padding-left, grid-gap, grid-column-gap, grid-row-gap
   space: [
-    0,    // 0
-    4,    // 1
-    8,    // 2
-    12,   // 3
-    16,   // 4
-    20,   // 5
-    24,   // 6
-    32,   // 7
-    48,   // 8
-    64,   // 9
-    96,   // 10
-    160,  // 11
-    288,  // 12
+    0, // 0
+    4, // 1
+    8, // 2
+    12, // 3
+    16, // 4
+    20, // 5
+    24, // 6
+    32, // 7
+    48, // 8
+    64, // 9
+    96, // 10
+    160, // 11
+    288, // 12
   ],
   // border-radius
   radii: [
-    0,    // 0
-    4,    // 1
-    8,    // 2
-    12,   // 3
-    16,   // 4
-    20,   // 5
-    24,   // 6
-    32,   // 7
+    0, // 0
+    4, // 1
+    8, // 2
+    12, // 3
+    16, // 4
+    20, // 5
+    24, // 6
+    32, // 7
   ],
   // width, height, min-width, max-width, min-height, max-height
   sizes: [
-    0,    // 0
-    4,    // 1
-    8,    // 2
-    12,   // 3
-    16,   // 4
-    20,   // 5
-    24,   // 6
-    32,   // 7
-    48,   // 8
-    64,   // 9
-    96,   // 10
-    160,  // 11
-    288,  // 12
+    0, // 0
+    4, // 1
+    8, // 2
+    12, // 3
+    16, // 4
+    20, // 5
+    24, // 6
+    32, // 7
+    48, // 8
+    64, // 9
+    96, // 10
+    160, // 11
+    288, // 12
   ],
   // z-index
   zIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],

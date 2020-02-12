@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "urbit/indigo-tokens",
   "main": "dist/index.js",
-  "module": "dist/indigo-react.esm.js",
+  "module": "dist/indigo-tokens.esm.js",
   "files": [
     "dist"
   ],
