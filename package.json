@@ -1,7 +1,7 @@
 {
-  "name": "indigo-tokens",
+  "name": "@tlon/indigo-tokens",
   "version": "1.2.4",
-  "description": "Tlon&#x27;s design language",
+  "description": "Tlon's design language",
   "author": "tlon",
   "license": "MIT",
   "repository": "urbit/indigo-tokens",
