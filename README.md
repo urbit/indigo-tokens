@@ -2,6 +2,10 @@
 
 Indigo tokens are named style attributes we use to maintain a consistent and scalable system. All attributes live inside `index.js`.
 
+### Related
+[Indigo Tokens (this library)](https://www.github.com/urbit/indigo-tokens)
+[Indigo React](https://www.github.com/urbit/indigo-react)
+
 **getting started**
 
 **NPM**
