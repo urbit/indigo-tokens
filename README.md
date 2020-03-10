@@ -4,9 +4,8 @@
 [![npm bundle size](https://img.shields.io/bundlephobia/min/@tlon/indigo-tokens?style=plastic)](https://www.npmjs.com/package/@tlon/indigo-tokens)
 ![NPM](https://img.shields.io/npm/l/@tlon/indigo-tokens?style=plastic)
 
-##### Related
-- [indigo-react](https://www.github.com/urbit/indigo-react)
-- [indigo-static](https://www.github.com/urbit/indigo-static)
+**Related**: [indigo-react](https://www.github.com/urbit/indigo-react),
+[indigo-static](https://www.github.com/urbit/indigo-static)
 
 ## Quick Start
 
