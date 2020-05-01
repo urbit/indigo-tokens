@@ -14,18 +14,21 @@ const core = {
     24, // 6
     32, // 7
     48, // 8
+    64, // 9
+    72, // 10
   ],
   // 	font-weight
   fontWeights: {
     thin: 300,
     regular: 400,
-    bold: 500,
+    bold: 600,
   },
   // line-height
   lineHeights: {
-    short: 1.333334,
+    min: 1.2,
+    short: 1.333333,
     regular: 1.5,
-    tall: 1.666667,
+    tall: 1.666666,
   },
   // border, border-top, border-right, border-bottom, border-left
   borders: ['none', '1px solid'],
@@ -50,13 +53,15 @@ const core = {
   // border-radius
   radii: [
     0, // 0
-    4, // 1
-    8, // 2
-    12, // 3
-    16, // 4
-    20, // 5
-    24, // 6
-    32, // 7
+    2, // 1
+    4, // 2
+    6, // 3
+    8, // 4
+    10, // 5
+    12, // 6
+    16, // 7
+    24, // 8
+    32, // 9
   ],
   // width, height, min-width, max-width, min-height, max-height
   sizes: [
@@ -78,7 +83,7 @@ const core = {
   ],
   // z-index
   zIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-  breakpoints: ['768px', '1024px', '1440px'],
+  breakpoints: ['768px', '1024px', '1440px', '2200px'],
 };
 
 export default core;
