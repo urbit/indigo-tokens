@@ -17,8 +17,8 @@ const theme = {
     gray0: '#DCDCDC',
     white: '#E5E5E5',
     // util
-    primary: colors.blue1,
-    util: '#FFFF00',
+    primary: colors.blue,
+    caution: colors.red,
     none: 'rgba(0,0,0,0)',
   },
   ...core,

@@ -32,8 +32,8 @@ const theme = {
     blue1: '#FF9123',
     blue0: '#1E0E00',
     // Util
-    primary: colors.blue1,
-    util: '#FFFF00',
+    primary: colors.blue,
+    caution: colors.red,
     none: 'rgba(0,0,0,0)',
   },
   ...core,

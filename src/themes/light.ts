@@ -4,8 +4,8 @@ import core from '../core';
 const theme = {
   colors: {
     ...colors,
-    primary: colors.blue1,
-    util: '#FFFF00',
+    primary: colors.blue,
+    caution: colors.red,
     none: 'rgba(0,0,0,0)',
   },
   ...core,
