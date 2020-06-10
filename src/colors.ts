@@ -1,141 +1,141 @@
-// Use 6-digit hex for all colors
-const toHexIntStr = (n: number) => (~~(n * 255)).toString(16);
-const white = '#FFFFFF';
-const black = '#000000';
+const toHexIntStr = (n: number) =>
+  (~~(n * 255))
+    .toString(16)
+    .padStart(2, '0')
+    .toUpperCase();
+
+const base = {
+  white: '#FFFFFF',
+  black: '#000000',
+  red: '#FF4036',
+  orange: '#FF6800',
+  yellow: '#FFC800',
+  green: '#0AAE6F',
+  blue: '#289EFF',
+  purple: '#9D52FF',
+};
 
 const scales = {
-  red: [] as string[],
-  yellow: [] as string[],
-  gray: [] as string[],
-  green: [] as string[],
-  blue: [] as string[],
-  purple: [] as string[],
+  black01: '#00000019',
+  black02: '#00000033',
+  black03: '#0000004C',
+  black04: '#00000066',
+  black05: '#0000000C',
+  black06: '#00000099',
+  black07: '#000000B2',
+  black08: '#000000CC',
+  black09: '#000000E5',
+  blue01: '#289EFF19',
+  blue02: '#289EFF33',
+  blue03: '#289EFF4C',
+  blue04: '#289EFF66',
+  blue05: '#289EFF0C',
+  blue06: '#289EFF99',
+  blue07: '#289EFFB2',
+  blue08: '#289EFFCC',
+  blue09: '#289EFFE5',
+  green01: '#0AAE6F19',
+  green02: '#0AAE6F33',
+  green03: '#0AAE6F4C',
+  green04: '#0AAE6F66',
+  green05: '#0AAE6F0C',
+  green06: '#0AAE6F99',
+  green07: '#0AAE6FB2',
+  green08: '#0AAE6FCC',
+  green09: '#0AAE6FE5',
+  orange01: '#FF680019',
+  orange02: '#FF680033',
+  orange03: '#FF68004C',
+  orange04: '#FF680066',
+  orange05: '#FF68000C',
+  orange06: '#FF680099',
+  orange07: '#FF6800B2',
+  orange08: '#FF6800CC',
+  orange09: '#FF6800E5',
+  purple01: '#9D52FF19',
+  purple02: '#9D52FF33',
+  purple03: '#9D52FF4C',
+  purple04: '#9D52FF66',
+  purple05: '#9D52FF0C',
+  purple06: '#9D52FF99',
+  purple07: '#9D52FFB2',
+  purple08: '#9D52FFCC',
+  purple09: '#9D52FFE5',
+  red01: '#FF403619',
+  red02: '#FF403633',
+  red03: '#FF40364C',
+  red04: '#FF403666',
+  red05: '#FF40360C',
+  red06: '#FF403699',
+  red07: '#FF4036B2',
+  red08: '#FF4036CC',
+  red09: '#FF4036E5',
+  white01: '#FFFFFF19',
+  white02: '#FFFFFF33',
+  white03: '#FFFFFF4C',
+  white04: '#FFFFFF66',
+  white05: '#FFFFFF0C',
+  white06: '#FFFFFF99',
+  white07: '#FFFFFFB2',
+  white08: '#FFFFFFCC',
+  white09: '#FFFFFFE5',
+  yellow01: '#FFC80019',
+  yellow02: '#FFC80033',
+  yellow03: '#FFC8004C',
+  yellow04: '#FFC80066',
+  yellow05: '#FFC8000C',
+  yellow06: '#FFC80099',
+  yellow07: '#FFC800B2',
+  yellow08: '#FFC800CC',
+  yellow09: '#FFC800E5',
 };
 
-scales.red = [
-  '#C2111B', // 8
-  '#D12228', // 7
-  '#DE2A2F', // 6
-  '#FF4036', // 5
-  '#F95251', // 4
-  '#ED7374', // 3
-  '#F59B9B', // 2
-  '#FFCED3', // 1
-  '#FFEBEF', // 0
-];
-
-scales.yellow = [
-  '#FF6800', // 8
-  '#FF8A00', // 7
-  '#FF9C00', // 6
-  '#FFBE00', // 5
-  '#FFC800', // 4
-  '#FFD342', // 3
-  '#FFDF7B', // 2
-  '#FFEBAF', // 1
-  '#FFF8DF', // 0
-];
-
-scales.gray = [
-  '#222222', // 8
-  '#333333', // 7
-  '#555555', // 6
-  '#808080', // 5
-  '#999999', // 4
-  '#AAAAAA', // 3
-  '#CCCCCC', // 2
-  '#EEEEEE', // 1
-  '#F4F4F4', // 0
-];
-
-scales.green = [
-  '#005C37', // 8
-  '#007C4C', // 7
-  '#008D58', // 6
-  '#0AAE6F', // 5
-  '#45BA85', // 4
-  '#6AC69A', // 3
-  '#97D6B6', // 2
-  '#C0E6D2', // 1
-  '#E5F5ED', // 0
-];
-
-scales.blue = [
-  '#0B3DA8', // 8
-  '#005CC9', // 7
-  '#006EDB', // 6
-  '#008EFE', // 5
-  '#289EFF', // 4
-  '#56AFFE', // 3
-  '#89C6FF', // 2
-  '#B8DCFF', // 1
-  '#E2F1FF', // 0
-];
-
-scales.purple = [
-  '#4110CF', // 8
-  '#5B08EA', // 7
-  '#6C15EF', // 6
-  '#8928FF', // 5
-  '#9D52FF', // 4
-  '#B176FF', // 3
-  '#C8A0FF', // 2
-  '#DEC7FF', // 1
-  '#F3E8FF', // 0
-];
-
-const accent = {
-  red: scales.red[5],
-  yellow: scales.yellow[4],
-  green: scales.green[5],
-  blue: scales.blue[4],
-  purple: scales.purple[4],
+const bg = {
+  bg: base.white,
 };
 
-const foreground = {
-  // Black
-  black: black,
-  black8: black + toHexIntStr(0.8),
-  black3: black + toHexIntStr(0.3),
-  // White
-  white: white,
-  white8: white + toHexIntStr(0.8),
-  white4: white + toHexIntStr(0.4),
-};
+const fg = {
+  dark: base.black,
+  dark3: base.black,
+  dark2: base.black + toHexIntStr(0.8),
+  dark1: base.black + toHexIntStr(0.3),
+  dark0: base.black + toHexIntStr(0.05),
 
-const background = {
-  black: black,
-  white: white,
-  lightGrey: '#F4F4F4',
-  silver: '#CCCCCC',
-  darkGray: '#222222',
-};
+  light: base.white,
+  light3: base.white,
+  light2: base.white + toHexIntStr(0.8),
+  light1: base.white + toHexIntStr(0.3),
+  light0: base.white + toHexIntStr(0.05),
 
-const special = {
-  // Pimrary focus color
-  primary: accent.blue,
-  primary8: accent.blue + toHexIntStr(0.8),
-  primary3: accent.blue + toHexIntStr(0.3),
-  // Error color
-  error: accent.red,
-  error8: accent.red + toHexIntStr(0.8),
-  error3: accent.red + toHexIntStr(0.3),
-  // caution color
-  caution: accent.yellow,
-  caution8: accent.yellow + toHexIntStr(0.8),
-  caution3: accent.yellow + toHexIntStr(0.3),
-  // Success color for successful validation checks
-  success: accent.green,
-  success8: accent.green + toHexIntStr(0.8),
-  success3: accent.green + toHexIntStr(0.3),
+  primary: base.blue,
+  primary3: base.blue,
+  primary2: base.blue + toHexIntStr(0.8),
+  primary1: base.blue + toHexIntStr(0.3),
+  primary0: base.blue + toHexIntStr(0.05),
+
+  error: base.red,
+  error3: base.red,
+  error2: base.red + toHexIntStr(0.8),
+  error1: base.red + toHexIntStr(0.3),
+  error0: base.red + toHexIntStr(0.05),
+
+  caution: base.yellow,
+  caution3: base.yellow,
+  caution2: base.yellow + toHexIntStr(0.8),
+  caution1: base.yellow + toHexIntStr(0.3),
+  caution0: base.yellow + toHexIntStr(0.05),
+
+  success: base.green,
+  success3: base.green,
+  success2: base.green + toHexIntStr(0.8),
+  success1: base.green + toHexIntStr(0.3),
+  success0: base.green + toHexIntStr(0.05),
 };
 
 const colors = {
-  ...accent,
-  ...foreground,
-  ...background,
-  ...special,
+  scales: scales,
+  ...fg,
+  ...bg,
 };
 
-export type Colors = typeof colors;
 export default colors;
